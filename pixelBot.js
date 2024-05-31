@@ -96,7 +96,7 @@ javascript:(function(){
         if (currentY >= width) currentY = startY;
         let next = index + 1;
         while (true) {
-            if (boardList[(currentX+next*64) + currentY] != colors[next % colors.length].color) {
+            if (boardList[(currentX*64) + currentY] != colors[next % colors.length].color) {
                 break;
             };
             index++;
