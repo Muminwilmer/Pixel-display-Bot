@@ -102,7 +102,7 @@ javascript:(function(){
             index++;
             next++;
             if (index == colors.length) {
-                index = 0;
+                index = -1;
                 currentY++;
             };
             if (next >= colors.length) {
